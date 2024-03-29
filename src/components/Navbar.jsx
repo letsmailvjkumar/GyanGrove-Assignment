@@ -8,7 +8,7 @@ import user  from '../assets/user.png'
 const Navbar = () => {
   return (
     <>
-    <div className='flex justify-between max-[480px]:justify-start max-[480px]:gap-8'>
+    <div className='flex justify-between max-[480px]:justify-start'>
         <div className='text-2xl font-bold text-red-600'>
             BookUsNow
         </div>
@@ -20,11 +20,11 @@ const Navbar = () => {
                 </button>
             </div>
             <div className='flex relative'>
-            <img src={search} alt="search-icon" className='w-4 h-4 absolute right-4 top-2' />
+            <img src={search} alt="search-icon" className='w-4 h-4 absolute right-4 top-2 max-[480px]:relative left-52 max-[480px]:top-0 ' />
             <input type="text" placeholder='"old phantom"' className='ps-4 w-96 border rounded-lg h-8 max-[480px]:hidden' />
             </div>
         </div>
-        <div className='flex items-center gap-6'>
+        <div className='flex items-center gap-6 max-[480px]:ps-56 max-[480px]:gap-5'>
             <div className='flex items-center gap-2'>
                 <img src={heart} alt="favourite" className='w-4 h-4' />
                 <span className='max-[480px]:hidden'>Favourites</span>
@@ -40,7 +40,7 @@ const Navbar = () => {
         <img src={location} alt="location-icon"  className='w-4 h-4 '/>
         Mumbai, India
         </div>
-        <div className='flex gap-5 ps-28 max-[480px]:px-1 '>
+        <div className='flex gap-5 ps-28 max-[480px]:px-1'>
             <div className='hover:underline'>Live Shows</div>
             <div className='hover:underline'>Movies</div>
             <div className='hover:underline'>Plays</div>

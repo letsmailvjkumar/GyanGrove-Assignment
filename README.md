@@ -15,14 +15,13 @@ After cloning the repository, ensure to download any required datasets or models
 
 The project is developed using npm. Ensure you have npm installed on your system.
 Install project dependencies by running:
-Copy code
-npm install
+<code>npm install</code>
 
 ### Explanation of Design and Technical Decisions
-API Integration: Axios is utilized for fetching event data from provided APIs. Axios simplifies the process of making HTTP requests and handling responses.
-Responsive Design: The website is designed to adapt to various screen sizes using CSS media queries and flexible layout techniques.
-Lazy Loading: Lazy loading techniques are implemented to optimize website load time by asynchronously loading resources such as images as the user scrolls down the page.
-Modular Functions: The codebase is structured with modular functions to improve code organization, readability, and maintainability.
+-API Integration: Axios is utilized for fetching event data from provided APIs. Axios simplifies the process of making HTTP requests and handling responses.
+-Responsive Design: The website is designed to adapt to various screen sizes using CSS media queries and flexible layout techniques.
+-Lazy Loading: Lazy loading techniques are implemented to optimize website load time by asynchronously loading resources such as images as the user scrolls down the page.
+-Modular Functions: The codebase is structured with modular functions to improve code organization, readability, and maintainability.
 
 ### Run
 Once dependencies are installed and the repository is cloned, follow these steps to run the project:

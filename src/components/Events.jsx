@@ -89,7 +89,7 @@ const Events = () => {
         Upcoming events
         <img src={arrow} alt="right-arrow" className="w-4 h-4" />
       </div>
-      <div className="flex flex-wrap gap-12 mt-6 w-11/12 mx-20 max-[480px]:mx-0">
+      <div className="flex flex-wrap gap-12 mt-6 w-11/12 mx-20 max-[480px]:mx-auto">
         {events.map((item, index) => (
           <div key={index}>
             <div className="border">

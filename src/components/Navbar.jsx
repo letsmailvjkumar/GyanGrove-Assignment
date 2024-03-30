@@ -20,7 +20,7 @@ const Navbar = () => {
                 </button>
             </div>
             <div className='flex relative'>
-            <img src={search} alt="search-icon" className='w-4 h-4 absolute right-4 top-2 max-[480px]:relative max-[480px]:top-0  max-[480px]:left-56' />
+            <img src={search} alt="search-icon" className='w-4 h-4 absolute right-4 top-2 max-[480px]:relative max-[480px]:top-0  max-[480px]:left-20' />
             <input type="text" placeholder='"old phantom"' className='ps-4 w-96 border rounded-lg h-8 max-[480px]:hidden' />
             </div>
         </div>

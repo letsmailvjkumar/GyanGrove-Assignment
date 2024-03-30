@@ -1,18 +1,34 @@
 ## Frontend Developer Internship Assignment
-# Objective
+### Objective
 The objective of this project is to build a responsive website that showcases upcoming and recommended events. The website fetches event data from provided APIs and ensures compatibility with both desktop and mobile screen sizes.
+[demo link](https://docs.google.com/document/u/0/d/1G7KEJTCsgZzvzqVqmg23Zw7wDYm3Ioai597U6749ntU/mobilebasic)
 
-# Setup and Local Run Instructions To run the project locally, follow these steps:
+### Getting Started
+Clone the Repository:
 
--Clone the project to your local computer.
--Navigate to the project directory.
--Run npm install to install project dependencies.
+bash
+Copy code
+git clone https://github.com/your-username/frontend-internship-assignment.git
+After cloning the repository, ensure to download any required datasets or models specified in the project documentation, typically found in the data or models directories.
 
-# Explanation of Design and Technical Decisions
-API Integration: The project utilizes Axios to fetch event data from the provided APIs. Axios is a popular library for making HTTP requests, offering simplicity and flexibility.
+### Requirements:
 
-Responsive Design: The website is designed to be responsive, ensuring optimal viewing and interaction experience across various devices and screen sizes. This is achieved through the use of media queries and flexible layout techniques.
+The project is developed using npm. Ensure you have npm installed on your system.
+Install project dependencies by running:
+Copy code
+npm install
 
-Lazy Loading: To optimize website load time and improve user experience, lazy loading techniques are implemented. This allows content, including images and other resources, to be loaded asynchronously as the user scrolls down the page.
+### Explanation of Design and Technical Decisions
+API Integration: Axios is utilized for fetching event data from provided APIs. Axios simplifies the process of making HTTP requests and handling responses.
+Responsive Design: The website is designed to adapt to various screen sizes using CSS media queries and flexible layout techniques.
+Lazy Loading: Lazy loading techniques are implemented to optimize website load time by asynchronously loading resources such as images as the user scrolls down the page.
+Modular Functions: The codebase is structured with modular functions to improve code organization, readability, and maintainability.
 
-Modular Functions: The codebase is structured with modular functions to enhance code readability, maintainability, and reusability. This approach promotes better organization and scalability of the project.
+### Run
+Once dependencies are installed and the repository is cloned, follow these steps to run the project:
+
+Open a terminal or command prompt and navigate to the project directory.
+Run the development server:
+Copy code
+npm run dev
+Open your web browser and navigate to http://localhost:5173 to view the website.

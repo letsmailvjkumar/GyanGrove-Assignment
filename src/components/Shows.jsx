@@ -18,7 +18,18 @@ const Shows = () => {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
-    cssEase: "linear"
+    cssEase: "linear",
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      }
+    ]
   };
 
   useEffect(() => {
@@ -71,11 +82,11 @@ const Shows = () => {
 };
 
   return (
-    <div className="mx-10">
+    <div>
       <div className="flex items-center justify-between font-semibold">
         <div className="flex items-center gap-3 ps-5">
         Recommended shows
-        <img src={arrow} alt="arrow-icon" className="w-4 h-4 grayscale invert" />
+        <img src={arrow} alt="arrow-icon" className="w-4 h-4" />
         </div>
         <div className="underline">
             See all
@@ -85,7 +96,7 @@ const Shows = () => {
       <Slider {...settings}>
       {show.map((item, index) => (
         <div key={index}>
-          <div className="relative mt-5">
+          <div className="relative mt-5 max-[480px]:w-72">
             <img
               src={`https://drive.google.com/thumbnail?id=${fileIds[index]}&sz=w1000`}
               alt={`event${index}`}
@@ -94,7 +105,7 @@ const Shows = () => {
             <div className="w-64 absolute z-30 text-white bottom-7 text-sm ps-7">
               <div className="flex justify-between pe-5">
                 <div>{reduceEventName(item.eventName)}</div>
-                <div>{formatDate(item.date)}</div> {/* Format the date */}
+                <div>{formatDate(item.date)}</div>
               </div>
               <div className="flex gap-1">
                 <div className="flex items-center gap-1">

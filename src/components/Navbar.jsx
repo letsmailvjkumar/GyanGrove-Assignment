@@ -20,11 +20,11 @@ const Navbar = () => {
                 </button>
             </div>
             <div className='flex relative'>
-            <img src={search} alt="search-icon" className='w-4 h-4 absolute right-4 top-2 max-[480px]:relative left-52 max-[480px]:top-0 ' />
+            <img src={search} alt="search-icon" className='w-4 h-4 absolute right-4 top-2 max-[480px]:relative left-52 max-[480px]:top-0  max-[480px]:left-20' />
             <input type="text" placeholder='"old phantom"' className='ps-4 w-96 border rounded-lg h-8 max-[480px]:hidden' />
             </div>
         </div>
-        <div className='flex items-center gap-6 max-[480px]:ps-56 max-[480px]:gap-5'>
+        <div className='flex items-center gap-6 max-[480px]:gap-5 max-[480px]:ms-auto'>
             <div className='flex items-center gap-2'>
                 <img src={heart} alt="favourite" className='w-4 h-4' />
                 <span className='max-[480px]:hidden'>Favourites</span>

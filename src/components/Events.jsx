@@ -84,12 +84,12 @@ const Events = () => {
   };
 
   return (
-    <div className="mx-10">
+    <div>
       <div className="flex items-center font-semibold gap-2">
         Upcoming events
         <img src={arrow} alt="right-arrow" className="w-4 h-4" />
       </div>
-      <div className="flex flex-wrap gap-12 mt-6 w-11/12 mx-20">
+      <div className="flex flex-wrap gap-12 mt-6 w-11/12 mx-20 max-[480px]:mx-0">
         {events.map((item, index) => (
           <div key={index}>
             <div className="border">
@@ -123,7 +123,7 @@ const Events = () => {
         {loading && <div>Loading...</div>}
         {reachedEnd && <div>No more events</div>}
       </div>
-      <div className="mt-4 flex justify-center">
+      <div className="mt-4 flex justify-center max-[480px]:mx-0">
         {[1, 2, 3, 4, 5].map((pageNumber) => (
           <button
             key={pageNumber}

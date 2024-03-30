@@ -12,7 +12,7 @@ function App() {
     <div className='mx-10 my-5 max-[480px]:mx-2'>
       <Navbar/>
     </div>
-    <div>
+    <div className='mx-10 '>
         <Banner />
     </div>
     <div className="mt-10 mx-20">

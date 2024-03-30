@@ -84,7 +84,7 @@ const Events = () => {
   };
 
   return (
-    <div>
+    <div className="mx-10">
       <div className="flex items-center font-semibold gap-2">
         Upcoming events
         <img src={arrow} alt="right-arrow" className="w-4 h-4" />
